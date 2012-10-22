@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1B26435D1635059700789CD2 /* ofxFTGLESFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B26430C1635059600789CD2 /* ofxFTGLESFont.cpp */; };
-		1B2644B51635101900789CD2 /* libFTGLES.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2644B01635101900789CD2 /* libFTGLES.a */; };
-		1B2644B61635101900789CD2 /* libFTGLES.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2644B21635101900789CD2 /* libFTGLES.a */; };
-		1B2644B71635101900789CD2 /* libFTGLES.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2644B41635101900789CD2 /* libFTGLES.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -52,9 +49,6 @@
 /* Begin PBXFileReference section */
 		1B26430C1635059600789CD2 /* ofxFTGLESFont.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxFTGLESFont.cpp; sourceTree = "<group>"; };
 		1B26430D1635059600789CD2 /* ofxFTGLESFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxFTGLESFont.h; sourceTree = "<group>"; };
-		1B2644B01635101900789CD2 /* libFTGLES.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFTGLES.a; sourceTree = "<group>"; };
-		1B2644B21635101900789CD2 /* libFTGLES.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFTGLES.a; sourceTree = "<group>"; };
-		1B2644B41635101900789CD2 /* libFTGLES.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFTGLES.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* ofxFLGLESExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ofxFLGLESExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -98,9 +92,6 @@
 				E41D400C13B39D2100A75A5D /* CoreMedia.framework in Frameworks */,
 				E41D400D13B39D2100A75A5D /* CoreVideo.framework in Frameworks */,
 				E41D400E13B39D2100A75A5D /* MapKit.framework in Frameworks */,
-				1B2644B51635101900789CD2 /* libFTGLES.a in Frameworks */,
-				1B2644B61635101900789CD2 /* libFTGLES.a in Frameworks */,
-				1B2644B71635101900789CD2 /* libFTGLES.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +109,6 @@
 		1B2642071635059600789CD2 /* ofxFTGLES */ = {
 			isa = PBXGroup;
 			children = (
-				1B2644AD16350FFF00789CD2 /* libs */,
 				1B26430B1635059600789CD2 /* src */,
 			);
 			name = ofxFTGLES;
@@ -132,51 +122,6 @@
 				1B26430D1635059600789CD2 /* ofxFTGLESFont.h */,
 			);
 			path = src;
-			sourceTree = "<group>";
-		};
-		1B2644AD16350FFF00789CD2 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				1B2644AE1635100400789CD2 /* lib */,
-			);
-			name = libs;
-			sourceTree = "<group>";
-		};
-		1B2644AE1635100400789CD2 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				1B2644AF1635101900789CD2 /* Debug-iphoneos */,
-				1B2644B11635101900789CD2 /* Debug-iphonesimulator */,
-				1B2644B31635101900789CD2 /* Release-iphoneos */,
-			);
-			name = lib;
-			sourceTree = "<group>";
-		};
-		1B2644AF1635101900789CD2 /* Debug-iphoneos */ = {
-			isa = PBXGroup;
-			children = (
-				1B2644B01635101900789CD2 /* libFTGLES.a */,
-			);
-			name = "Debug-iphoneos";
-			path = "libs/lib/Debug-iphoneos";
-			sourceTree = "<group>";
-		};
-		1B2644B11635101900789CD2 /* Debug-iphonesimulator */ = {
-			isa = PBXGroup;
-			children = (
-				1B2644B21635101900789CD2 /* libFTGLES.a */,
-			);
-			name = "Debug-iphonesimulator";
-			path = "libs/lib/Debug-iphonesimulator";
-			sourceTree = "<group>";
-		};
-		1B2644B31635101900789CD2 /* Release-iphoneos */ = {
-			isa = PBXGroup;
-			children = (
-				1B2644B41635101900789CD2 /* libFTGLES.a */,
-			);
-			name = "Release-iphoneos";
-			path = "libs/lib/Release-iphoneos";
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
@@ -443,14 +388,14 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				LIBRARY_SEARCH_PATHS = (
-					"$(OF_PATH)/addons/ofxFTGLES/libs/lib/Debug-iphonesimulator",
-					"$(OF_PATH)/addons/ofxFTGLES/libs/lib/Debug-iphoneos",
+					"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/ios",
+					"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/osx",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
-					"\"$(OF_PATH)/addons/ofxFTGLES/libs/lib/Debug-iphonesimulator/libFTGLES.a\"",
-					"\"$(OF_PATH)/addons/ofxFTGLES/libs/lib/Debug-iphoneos/libFTGLES.a\"",
+					"\"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/osx/libFTGLESd.a\"",
+					"\"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/ios/libFTGLESd.a\"",
 				);
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -485,11 +430,11 @@
 					src,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
-				LIBRARY_SEARCH_PATHS = "$(OF_PATH)/addons/ofxFTGLES/libs/lib/Release-iphoneos";
+				LIBRARY_SEARCH_PATHS = "$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/ios";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
-					"\"$(OF_PATH)/addons/ofxFTGLES/libs/lib/Release-iphoneos/libFTGLES.a\"",
+					"\"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/ios/libFTGLES.a\"",
 				);
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
