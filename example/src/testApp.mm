@@ -25,7 +25,7 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
 	ofSetColor(0);
-	font.drawString(str,0,0);// ofGetWidth() - ( (ofGetFrameNum()*30) % int(font.getStringBoundingBox(str, 0,0).width + ofGetWidth())), ofGetHeight());
+	font.drawString(str, ofGetWidth() - ( (ofGetFrameNum()*30) % int(font.getStringBoundingBox(str, 0,0).width + ofGetWidth())), ofGetHeight());
 }
 
 //--------------------------------------------------------------

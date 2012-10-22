@@ -394,7 +394,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
-					"\"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/osx/libFTGLESd.a\"",
+					"\"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/osx/libFTGLES.a\"",
 					"\"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/ios/libFTGLESd.a\"",
 				);
 				PREBINDING = NO;
@@ -435,6 +435,7 @@
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
 					"\"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/ios/libFTGLES.a\"",
+					"\"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/osx/libFTGLES.a\"",
 				);
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
