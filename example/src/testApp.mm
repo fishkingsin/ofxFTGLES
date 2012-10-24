@@ -13,8 +13,8 @@ void testApp::setup(){
 	ofSetVerticalSync(true);
 	
 	ofEnableAlphaBlending();
-	str = "FTGL FTW";
-	font.loadFont("verdana.ttf", ofGetHeight(), true);
+	str = wstring(L"FTGL FTW 你好嗎 Hello");
+	font.loadFont("LiHeiPro.ttf", ofGetHeight()*0.3, true);
 }
 
 //--------------------------------------------------------------
@@ -25,6 +25,7 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
 	ofSetColor(0);
+	//font.drawString("HelloWorld", 0, ofGetHeight());
 	font.drawString(str, ofGetWidth() - ( (ofGetFrameNum()*30) % int(font.getStringBoundingBox(str, 0,0).width + ofGetWidth())), ofGetHeight());
 }
 

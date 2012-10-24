@@ -333,9 +333,13 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../addons/ofxFTGLES/libs/freetype2\"",
-					"\"$(SRCROOT)/../../../addons/ofxFTGLES/libs/lib/Debug-iphoneos\"",
-					"\"$(SRCROOT)/../../../addons/ofxFTGLES/libs/lib/Debug-iphonesimulator\"",
-					"\"$(SRCROOT)/../../../addons/ofxFTGLES/libs/lib/Release-iphoneos\"",
+					"\"$(SRCROOT)/../../../addons/ofxFTGLES/libs/ftgles/lib/osx\"",
+					"\"$(SRCROOT)/../../../addons/ofxFTGLES/libs/ftgles/lib/ios\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_LIBS)",
+					"\"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/osx/libFTGLES.a\"",
+					"\"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/ios/libFTGLESd.a\"",
 				);
 				PRODUCT_NAME = ofxFLGLESExample;
 				VALID_ARCHS = "armv6 armv7";
@@ -351,9 +355,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../addons/ofxFTGLES/libs/freetype2\"",
-					"\"$(SRCROOT)/../../../addons/ofxFTGLES/libs/lib/Debug-iphoneos\"",
-					"\"$(SRCROOT)/../../../addons/ofxFTGLES/libs/lib/Debug-iphonesimulator\"",
-					"\"$(SRCROOT)/../../../addons/ofxFTGLES/libs/lib/Release-iphoneos\"",
+					"\"$(SRCROOT)/../../../addons/ofxFTGLES/libs/ftgles/lib/ios\"",
 				);
 				PRODUCT_NAME = ofxFLGLESExample;
 				VALID_ARCHS = "armv6 armv7";
@@ -387,15 +389,11 @@
 					src,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/ios",
-					"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/osx",
-				);
+				LIBRARY_SEARCH_PATHS = "$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/osx";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
 					"\"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/osx/libFTGLES.a\"",
-					"\"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/ios/libFTGLESd.a\"",
 				);
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -435,7 +433,6 @@
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
 					"\"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/ios/libFTGLES.a\"",
-					"\"$(OF_PATH)/addons/ofxFTGLES/libs/ftgles/lib/osx/libFTGLES.a\"",
 				);
 				PREBINDING = NO;
 				SDKROOT = iphoneos;

@@ -23,7 +23,7 @@ class testApp : public ofxiPhoneApp{
         void gotMemoryWarning();
         void deviceOrientationChanged(int newOrientation);
 	ofxFTGLESFont font;
-	string str;
+	wstring str;
 	
 	vector<ofVec2f> points;
 };
